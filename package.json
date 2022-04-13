@@ -1,0 +1,25 @@
+{
+    "name": "ppnode",
+    "version": "0.0.0",
+    "description": "",
+    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "private": true,
+    "scripts": {
+        "clean": "rimraf dist",
+        "start": "npm run clean && parcel src/demo/*.html --no-source-maps --open",
+        "build:parcel": "parcel build src/demo/*.html --no-content-hash --no-source-maps --public-url ./",
+        "build": "npm run clean && npm run build:parcel",
+        "prepare": "husky install"
+    },
+    "author": "Paper Plane Design Studio®",
+    "homepage": "https://www.paperplane.com.br",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "eslint": "latest",
+        "husky": "latest",
+        "parcel": "latest",
+        "prettier": "latest",
+        "pretty-quick": "latest",
+        "rimraf": "latest"
+    }
+}
